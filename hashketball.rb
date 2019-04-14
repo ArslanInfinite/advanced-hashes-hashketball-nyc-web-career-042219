@@ -179,7 +179,7 @@ end
 
 def player_numbers(team_name)
   numbers = []
-  
+
   game_hash().each do |location, team_data|
     if team_name == team_data[:team_name]
       team_data[:players].each do |player_name, player_stats|
@@ -187,13 +187,6 @@ def player_numbers(team_name)
       end
     end
   end
-  
+
   return numbers
 end
-
-
-
-
-
-
-
